@@ -4,7 +4,6 @@ agent any
  environment {
 browser=credentials("browser")
 APP_URL=credentials("APP_URL")
-COURSES_URL=credentials("COURSES_URL")
 ADMIN_USER1=credentials("COURSES_URL")
 ADMIN_USER1_PASSWORD=credentials("ADMIN_USER1_PASSWORD")
     }
