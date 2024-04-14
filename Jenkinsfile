@@ -2,11 +2,11 @@ pipeline
 {
 agent any
  environment {
-browser=chrome
-APP_URL=http://localhost/login/index.php/
-COURSES_URL=http://localhost/admin/search.php#linkcourses
-ADMIN_USER1=admin5
-ADMIN_USER1_PASSWORD=Bolor@22
+browser=credentials("browser")
+APP_URL=credentials("APP_URL")
+COURSES_URL=credentials("COURSES_URL")
+ADMIN_USER1=credentials("COURSES_URL")
+ADMIN_USER1_PASSWORD=credentials("ADMIN_USER1_PASSWORD")
     }
 
 stages{
