@@ -47,3 +47,4 @@ stage('Generate HTML report'){
 }
 }
 
+}
