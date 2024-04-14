@@ -1,8 +1,6 @@
 pipeline
 {
 agent any
-
-
 stages{
 stage('Build'){
 steps{
@@ -11,11 +9,12 @@ echo "building the application"
 echo "build success"
 }
 }
-stage('Login Test'){
+stage('Setup'){
 steps{
-bat ' npm run Setup'
+bat ' npm run smoSetupke'
 echo " running Setup test"
 echo "Setup Test success"
+}
 }
 stage('Smoke Test'){
 steps{
@@ -47,4 +46,3 @@ stage('Generate HTML report'){
 }
 }
 
-}
