@@ -1,0 +1,34 @@
+{
+  "name": "playwright-tsbdd-kings-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rimraf test-results && mkdirp test-results",
+    "generate:report": "npx ts-node ./src/helper/reportGenerate.ts",
+    "pretest": "npm run clean:reports",
+    "posttest": "npm run generate:report && npm run open_report",
+    "open_report": "start ./test-results/report/index.html",
+    "execute:script": "cucumber-js test --tags @Setup",
+    "test": "npm run execute:script || npm run posttest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.2",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.43.0",
+    "@types/chance": "^1.1.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.2",
+    "allure-playwright": "^2.14.1",
+    "chance": "^1.1.11",
+    "dotenv": "^16.4.5",
+    "mkdirp": "^3.0.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}

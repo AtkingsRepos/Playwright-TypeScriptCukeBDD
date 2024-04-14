@@ -1,0 +1,124 @@
+import {
+  Browser,
+  chromium,
+  firefox,
+  Page,
+  BrowserContext,
+} from "@playwright/test";
+import edge from "@playwright/test";
+import {
+  Given,
+  When,
+  Then,
+  Before,
+  After,
+  AfterStep,
+  BeforeStep,
+  Status,
+  AfterAll,
+  BeforeAll,
+  setDefaultTimeout,
+} from "@cucumber/cucumber";
+import dotenv from "dotenv";
+import { Env } from "../config/env";
+import LoginPage from "../tests/pages/loginPage";
+setDefaultTimeout(1000 * 10 * 2);
+
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
+
+BeforeAll(async function () {
+  // This hook will be executed before all scenarios
+  dotenv.config();
+
+  let browserType = process.env["browser"];
+  //let browserType = "chrome";
+  switch (browserType) {
+    case "chrome":
+    case "gc":
+      browser = await chromium.launch({
+        headless: false,
+        channel: "chrome",
+        args: ["--start-maximized"],
+      });
+      console.log(`>>>>>BROWSER RUNNING: = CHROME [CHROMIUM]`);
+      break;
+
+    case "firefox":
+    case "ff":
+      browser = await firefox.launch({
+        headless: false,
+        channel: "firefox",
+        args: ["--start-maximized"],
+      });
+      console.log(`>>>>>BROWSER RUNNING: = FIREFOX [FF]`);
+      break;
+
+    case "edge":
+    case "msedge":
+      browser = await chromium.launch({
+        headless: false,
+        channel: "msedge",
+        args: ["--start-maximized"],
+      });
+      console.log(`>>>>>BROWSER RUNNING: = EDGE [CHROMIUM]`);
+      break;
+
+    default:
+      throw new Error(
+        `invalid browser type${browserType} is passed ..! please, correct it`
+      );
+  }
+});
+Before(async function (scenario) {
+  // This hook will be executed before all scenarios
+  context = await browser.newContext({
+    storageState: "src/helper/auth/admin_auth.json",
+    viewport: null,
+    javaScriptEnabled: true,
+    recordVideo: { dir: "test-results/videos" },
+  });
+  page = await context.newPage();
+
+  this.log(
+    `Scenario started at:${
+      scenario.pickle.name
+    }, ${new Date().toLocaleString()}`
+  );
+
+  this.log(`>>>>>${scenario.pickle.name} Test has started....!`);
+
+  //console.log(`>>>>>Launching APP url,${process.env["APP_URL"]!}`);
+  this.log(`>>>>>Launching APP url,${scenario.pickle.uri}.....`);
+});
+BeforeStep(async function (scenario) {
+  this.log(`>>>>>${scenario.pickleStep.text} Step has Started....!`);
+});
+AfterStep(async function ({ result }: { result: any }) {
+  // This hook will be executed after all steps, and take a screenshot on step failure
+  if (result.status === Status.FAILED) {
+    const buffer = await page.screenshot();
+    await page.screenshot({ path: "screenshot1.png" });
+    this.attach(buffer.toString("base64"), "base64:image/png");
+    console.log("Screenshot logged");
+  }
+});
+
+After(async function (scenario) {
+  await page.close();
+  await context.close();
+  this.log(`>>>>>${scenario.pickle.name} has Ended....!`);
+  this.log(`>>>>>${scenario.result?.status} has Ended....!`);
+  this.log(
+    `Scenario ended at:${scenario.pickle.name}, ${new Date().toLocaleString()}`
+  );
+});
+AfterAll(async () => {
+  await browser.close();
+});
+export function getPage(): Page {
+  return page;
+}
+
+export { Before, After };
