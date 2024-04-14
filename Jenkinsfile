@@ -1,6 +1,14 @@
 pipeline
 {
 agent any
+ environment {
+browser=chrome
+APP_URL=http://localhost/login/index.php/
+COURSES_URL=http://localhost/admin/search.php#linkcourses
+ADMIN_USER1=admin5
+ADMIN_USER1_PASSWORD=Bolor@22
+    }
+
 stages{
 stage('Build'){
 steps{
