@@ -9,8 +9,13 @@
     "pretest": "npm run clean:reports",
     "posttest": "npm run generate:report && npm run open_report",
     "open_report": "start ./test-results/report/index.html",
-    "execute:script": "cucumber-js test --tags @Setup",
-    "test": "npm run execute:script || npm run posttest"
+    "execute:script": "cucumber-js test",
+    "test": "npm run execute:script || npm run posttest",
+    "smoke": "cucumber-js test  --tags @AddUsers",
+    "checkGrades": "cucumber-js test --tags @CheckGrades",
+    "addcourses": "cucumber-js test  --tags @AddCourses",
+    "Setup": "cucumber-js test --tags @Setup",
+    "regression": "cucumber-js test --tags @Regression "
   },
   "keywords": [],
   "author": "",
@@ -24,11 +29,14 @@
     "@types/node": "^20.12.2",
     "allure-playwright": "^2.14.1",
     "chance": "^1.1.11",
-    "dotenv": "^16.4.5",
+    "cucumber-html-reporter": "^7.1.1",
     "mkdirp": "^3.0.1",
     "multiple-cucumber-html-reporter": "^3.6.2",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
