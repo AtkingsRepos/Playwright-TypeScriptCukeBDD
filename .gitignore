@@ -12,23 +12,23 @@
 # # *.playwright/.cache/
 # # *.admin_auth
 #  .config/
-*/config/env.ts
+####*/config/env.ts
 #  helper/**.json
-test-results/
+###test-results/
 #  *.helper/
 ####**/helper/auth/admin_auth.json
 # *'runTests.bat/
 #  *.admin_auth/
 # # *.node_modules
 *.txt
- .env
- *.env
- env/
+#####.env
+#####*.env
+##### env/
 # .runTest.bat
 # # *.playwright-report
 # # .blob-report
 # # *.playwright/.cache
-**/env.ts/
+#####**/env.ts/
 *.bat
 
 # Logs
@@ -106,7 +106,7 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+####.env
 .env.development.local
 .env.test.local
 .env.production.local
