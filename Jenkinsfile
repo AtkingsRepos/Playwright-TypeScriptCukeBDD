@@ -10,12 +10,6 @@ bat 'npm install'
 echo "building the application"
 echo "build success"
 }
-environment {
-browser=credentials("browser")
-APP_URL=credentials("APP_URL")
-ADMIN_USER1=credentials("ADMIN_USER1")
-ADMIN_USER1_PASSWORD=credentials("ADMIN_USER1_PASSWORD")
-    }
 }
 stage('Smoke Test'){
 steps{
