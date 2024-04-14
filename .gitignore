@@ -16,7 +16,7 @@
 #  helper/**.json
 test-results/
 #  *.helper/
-**/helper/auth/admin_auth.json
+####**/helper/auth/admin_auth.json
 # *'runTests.bat/
 #  *.admin_auth/
 # # *.node_modules

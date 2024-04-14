@@ -49,7 +49,7 @@ export default class LoginPage extends BasePage {
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
-  async adminLogin(username:any,password:any) {
+  async adminLogin(username:any, password:any) {
     await this.page.waitForTimeout(1000);
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
