@@ -11,7 +11,7 @@ echo "build success"
 }
 stage('Setup'){
 steps{
-bat ' npm run smoSetupke'
+bat ' npm run Setup'
 echo " running Setup test"
 echo "Setup Test success"
 }
