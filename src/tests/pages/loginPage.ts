@@ -19,8 +19,15 @@ export default class LoginPage extends BasePage {
   protected readonly logoutButton: Locator;
   protected readonly getLoggedInUserInfo: Locator;
 
+
+
   constructor(page: Page, log: ICreateLog) {
     super(page, log);
+     const Username = process.env["ADMIN_USER1"];
+     const password = process.env["ADMIN_USER1_PASSWORD"];
+
+     const URL = process.env["APP_URL"];
+    const  ENV = process.env;
 
     this.usernameInput = page.getByPlaceholder("username");
     this.passwordInput = page.getByPlaceholder("password");
@@ -42,10 +49,10 @@ export default class LoginPage extends BasePage {
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
-  async adminLogin() {
+  async adminLogin(username:any,password:any) {
     await this.page.waitForTimeout(1000);
-    await this.usernameInput.fill(Env.ADMIN_USER1);
-    await this.passwordInput.fill(Env.ADMIN_USER1_PASSWORD);
+    await this.usernameInput.fill(username);
+    await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
   async usersLogin(username: any, password: any) {
