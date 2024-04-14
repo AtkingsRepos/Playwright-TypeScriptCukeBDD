@@ -14,7 +14,7 @@
 #  .config/
 ####*/config/env.ts
 #  helper/**.json
-###test-results/
+test-results/
 #  *.helper/
 ####**/helper/auth/admin_auth.json
 # *'runTests.bat/
