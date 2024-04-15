@@ -30,12 +30,12 @@ steps{
 echo "Functional Test success"
 }
 }
-// stage('Generate HTML report'){
-//         steps{
-//         bat "npm run generate:report && npm run open_report"
+stage('Generate HTML report'){
+        steps{
+        bat "npm run generate:report && npm run open_report"
         
-// }
-// }
+}
+}
  post {
     success {
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'Surefire Report', reportTitles: '', useWrapperFileDirectly: true])
