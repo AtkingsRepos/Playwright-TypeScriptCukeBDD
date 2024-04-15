@@ -11,7 +11,7 @@
     "open_report": "start ./test-results/report/index.html",
     "execute:script": "cucumber-js test",
     "test": "npm run execute:script || npm run posttest",
-    "smoke": "cucumber-js test  --tags @AddUsers",
+    "smoke": "cucumber-js test  --tags @Smoke",
     "checkGrades": "cucumber-js test --tags @CheckGrades",
     "addcourses": "cucumber-js test  --tags @AddCourses",
     "Setup": "cucumber-js test --tags @Setup",

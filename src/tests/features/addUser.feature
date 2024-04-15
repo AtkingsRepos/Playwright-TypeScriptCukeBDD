@@ -1,6 +1,6 @@
 Feature: User management   
 
-@AddUsers	
+@AddUsers @Regression @Smoke
 Scenario: Admin adds new user
 	Given I navigate to site administration page link 
     When I click on the Add New User link
