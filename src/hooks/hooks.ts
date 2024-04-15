@@ -64,15 +64,17 @@ BeforeAll(async function () {
       });
       console.log(`>>>>>BROWSER RUNNING: = EDGE [EDGE]`);
       break;
+
     case "webkit":
-    case "webkit":
+    case "safari":
       browser = await chromium.launch({
         headless: false,
-        channel: "webkit",
+        channel: "safari",
         args: ["--start-maximized"],
       });
-      console.log(`>>>>>BROWSER RUNNING: = WEBKIT [WEBKIT]`);
+      console.log(`>>>>>BROWSER RUNNING: = WEBKIT [SAFARI]`);
       break;
+
     case "chromium":
     case "chromium":
       browser = await chromium.launch({
