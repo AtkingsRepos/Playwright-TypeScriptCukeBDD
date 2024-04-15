@@ -69,7 +69,7 @@ BeforeAll(async function () {
     case "wk":
       browser = await chromium.launch({
         headless: false,
-        channel: "swebkit",
+        channel: "webkit",
         args: ["--start-maximized"],
       });
       console.log(`>>>>>BROWSER RUNNING: = WEBKIT [WEBKIT]`);
