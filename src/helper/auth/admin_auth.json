@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "MoodleSession",
-      "value": "qkg1o8sdfbfjlh4bf408modiom",
+      "value": "kckg5g97gq04uk7cce5rnmm3jc",
       "domain": "localhost",
       "path": "/",
       "expires": -1,
@@ -15,7 +15,7 @@
       "value": "%25D8p%25B2%258A%2591",
       "domain": "localhost",
       "path": "/",
-      "expires": 1718366306.155722,
+      "expires": 1718399153.246421,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"

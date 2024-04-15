@@ -62,7 +62,25 @@ BeforeAll(async function () {
         channel: "msedge",
         args: ["--start-maximized"],
       });
-      console.log(`>>>>>BROWSER RUNNING: = EDGE [CHROMIUM]`);
+      console.log(`>>>>>BROWSER RUNNING: = EDGE [EDGE]`);
+      break;
+    case "webkit":
+    case "webkit":
+      browser = await chromium.launch({
+        headless: false,
+        channel: "webkit",
+        args: ["--start-maximized"],
+      });
+      console.log(`>>>>>BROWSER RUNNING: = WEBKIT [WEBKIT]`);
+      break;
+    case "chromium":
+    case "chromium":
+      browser = await chromium.launch({
+        headless: false,
+        channel: "chromium",
+        args: ["--start-maximized"],
+      });
+      console.log(`>>>>>BROWSER RUNNING: =CHROMIUM[CHROMIUM]`);
       break;
 
     default:
