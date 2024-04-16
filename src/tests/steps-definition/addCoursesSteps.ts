@@ -8,7 +8,7 @@ import {
 } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { getPage } from "../../hooks/hooks";
-import { Env } from "../../config/env";
+//import { Env } from "../../config/env";
 import SiteAdministrationPage from "../../tests/pages/siteAdministrationPage";
 import SiteNavigation from "../pages/siteNavigation";
 import AddCoursePage from "../pages/addCoursePage";
