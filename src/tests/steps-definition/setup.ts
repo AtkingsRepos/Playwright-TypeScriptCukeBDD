@@ -43,6 +43,8 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 // });
 
 When("I enter my credentials", async function () {
+  const username = process.env["ADMIN_USER1"];
+  const password = process.env["ADMIN_USER1_PASSWORD"];
   const loginPage = new LoginPage(getPage(), this.log);
   // const logoutButton = await getPage().getByRole("button", { name: "Log out" });
   // if (logoutButton) {

@@ -1,35 +1,23 @@
  *.node_modules/
  
-
 #  ./notes.txt
-#  .env
-#  helper/
-#  config/
-# # *.auth/
+.env/
+
 # # precess.env.*/
 # # *.playwright-report/
 # # *.blob-report/
 # # *.playwright/.cache/
-# # *.admin_auth
-#  .config/
-####*/config/env.ts
-#  helper/**.json
-test-results/
-#  *.helper/
+
+**/config/env.ts
+###test-results/
 ####**/helper/auth/admin_auth.json
-# *'runTests.bat/
-#  *.admin_auth/
-# # *.node_modules
 *.txt
-#####.env
-#####*.env
-##### env/
 # .runTest.bat
 # # *.playwright-report
 # # .blob-report
 # # *.playwright/.cache
-#####**/env.ts/
 *.bat
+*.env
 
 # Logs
 *.logs
@@ -106,7 +94,7 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-####.env
+.env
 .env.development.local
 .env.test.local
 .env.production.local

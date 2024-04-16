@@ -9,13 +9,14 @@ echo "building the application"
 echo "build success"
 }
 }
-// stage('SetUp Test'){
-// steps{
-// bat ' npm run Setup'
-// echo " running Setup test"
-// echo "Setup Test success"
-// }
-// }
+environment {
+        // Define environment variables here
+        ADMIN_USER1 = credentials('ADMIN_USER1') 
+        ADMIN_USER1_PASSWORD = credentials('ADMIN_USER1_PASSWORD') // Retrieve credentials using Jenkins Credentials Plugin
+        APP_URL = credentials('APP_URL')
+        // You can also set other environment variables here
+
+    }
 stage('Smoke Test'){
 steps{
 bat ' npm run smoke'
