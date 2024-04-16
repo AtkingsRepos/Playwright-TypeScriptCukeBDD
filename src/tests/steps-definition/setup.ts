@@ -10,7 +10,7 @@ import { expect } from "@playwright/test";
 import { getPage } from "../../hooks/hooks";
 import LoginPage from "../pages/loginPage"; // Import your page object
 import AddUserPage from "../pages/addUserPage";
-import { Env } from "../../config/env";
+//import { Env } from "../../config/env";
 import SiteNavigation from "../pages/siteNavigation";
 import { faker } from "@faker-js/faker";
 import dotenv from "dotenv";
