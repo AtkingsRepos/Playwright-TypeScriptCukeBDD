@@ -1,6 +1,15 @@
 pipeline
 {
 agent any
+  
+stages{
+stage('Build'){
+steps{
+bat 'npm install'
+echo "building the application"
+echo "build success"
+}
+}
 environment {
         // Define environment variables here
 ADMIN_USER1 = credentials('ADMIN_USER1') 
@@ -10,16 +19,6 @@ browserType = credentials('browser')
         // You can also set other environment variables here
 
     }
-    
-stages{
-stage('Build'){
-steps{
-bat 'npm install'
-echo "building the application"
-echo "build success"
-}
-}
-
 stage('Smoke Test'){
 steps{
 bat ' npm run smoke'
