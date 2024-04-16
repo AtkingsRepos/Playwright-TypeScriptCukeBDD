@@ -44,13 +44,13 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
 When("I enter my credentials", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-  const logoutButton = await getPage().getByRole("button", { name: "Log out" });
-  if (logoutButton) {
-    console.log(">>>>>>Logout button found, clicking to log out...");
-    await logoutButton.click();
-  } else {
-    console.log(">>>>>>>Logout button not found, proceeding with login...");
-  }
+  // const logoutButton = await getPage().getByRole("button", { name: "Log out" });
+  // if (logoutButton) {
+  //   console.log(">>>>>>Logout button found, clicking to log out...");
+  //   await logoutButton.click();
+  // } else {
+  //   console.log(">>>>>>>Logout button not found, proceeding with login...");
+  // }
  
   await loginPage.adminLogin(username, password);
   await getPage()
