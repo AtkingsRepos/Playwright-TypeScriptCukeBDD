@@ -16,9 +16,9 @@ import { faker } from "@faker-js/faker";
 import dotenv from "dotenv";
 dotenv.config();
 
-const username = Env.ADMIN_USER1;
-const password = Env.ADMIN_USER1_PASSWORD;
-const URL = Env.APP_URL;
+const username = process.env["ADMIN_USER1"];
+const password = process.env["ADMIN_USER1_PASSWORD"];
+const URL = process.env["APP_URL"];
 
 Given("As a User, I navigate to the moodle login webpage", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
@@ -27,9 +27,23 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
   this.log(`>>>>Test Execution Started at:  ${new Date().toLocaleString()}`);
 });
+// When("I enter my credentials", async function () {
+//   const loginPage = new LoginPage(getPage(), this.log);
+//   // if (loginPage.logoutPromptButton) {
+//   //   console.log(">>>>>>Logout button found, clicking to log out...");
+//   //   await loginPage.logoutPromptButton.click();
+//   // } else {
+//   //   console.log(">>>>>>>Logout button not found, proceeding with login...");
+//   // }
+//   await loginPage.adminLogin(username,password);
+
+//   await getPage()
+//     .context()
+//     .storageState({ path: "src/helper/auth/admin_auth.json" });
+// });
+
 When("I enter my credentials", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-  // Check if the "Logout" button exists
   const logoutButton = await getPage().getByRole("button", { name: "Log out" });
   if (logoutButton) {
     console.log(">>>>>>Logout button found, clicking to log out...");
@@ -37,10 +51,8 @@ When("I enter my credentials", async function () {
   } else {
     console.log(">>>>>>>Logout button not found, proceeding with login...");
   }
-  // Proceed to log in
+ 
   await loginPage.adminLogin(username, password);
-
-  // Save storage state after logging in
   await getPage()
     .context()
     .storageState({ path: "src/helper/auth/admin_auth.json" });

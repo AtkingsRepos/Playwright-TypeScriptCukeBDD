@@ -16,7 +16,8 @@ export default class LoginPage extends BasePage {
   protected readonly passwordInput: Locator;
   protected readonly loginButton: Locator;
   protected readonly homePageLogOutDropDownElementSelector: Locator;
-  readonly logoutButton: Locator;
+  protected readonly logoutButton: Locator;
+  readonly logoutPromptButton: Locator;
   protected readonly getLoggedInUserInfo: Locator;
 
   constructor(page: Page, log: ICreateLog) {
@@ -30,6 +31,7 @@ export default class LoginPage extends BasePage {
     );
     //this.logoutButton = page.getByText("log out");
     this.logoutButton = page.getByRole("menuitem", { name: "Log out" });
+    this.logoutPromptButton = page.getByRole("button", { name: "Log out" });
     this.getLoggedInUserInfo = page.locator("css=.mb-3 mt-3");
   }
 
@@ -42,7 +44,7 @@ export default class LoginPage extends BasePage {
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
-  async adminLogin(user:any, pwd:any) {
+  async adminLogin(user: any, pwd: any) {
     await this.page.waitForTimeout(1000);
     await this.usernameInput.fill(user);
     await this.passwordInput.fill(pwd);
