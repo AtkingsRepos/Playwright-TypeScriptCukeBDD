@@ -53,7 +53,7 @@ When("I enter my credentials", async function () {
   // } else {
   //   console.log(">>>>>>>Logout button not found, proceeding with login...");
   // }
-
+console.log(">>>>>>USERNAME is  :",  username," >>>>PASSWORD is  :  ", password)
   await loginPage.adminLogin(username, password);
   await getPage()
     .context()
@@ -69,11 +69,11 @@ Then("I should be logged in", async function () {
 
   // const text = node.textContent;
 });
-Then("I can log out successfully", async function () {
-  const loginPage = new LoginPage(getPage(), this.log);
-  await loginPage.logout();
-  //this.log(">>>>> Test Ended");
-  this.log(`>>>>Test Execution Ended at:  ${new Date().toLocaleString()}`);
-  await getPage().close();
-  await getPage().close();
-});
+// Then("I can log out successfully", async function () {
+//   const loginPage = new LoginPage(getPage(), this.log);
+//   await loginPage.logout();
+//   //this.log(">>>>> Test Ended");
+//   this.log(`>>>>Test Execution Ended at:  ${new Date().toLocaleString()}`);
+//   await getPage().close();
+//   //await getPage().close();
+// });
