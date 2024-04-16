@@ -20,7 +20,7 @@ import {
   setDefaultTimeout,
 } from "@cucumber/cucumber";
 import dotenv from "dotenv";
-import { Env } from "../config/env";
+//import { Env } from "../config/env";
 import LoginPage from "../tests/pages/loginPage";
 setDefaultTimeout(1000 * 10 * 2);
 
