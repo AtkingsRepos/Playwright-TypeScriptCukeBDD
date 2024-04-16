@@ -14,11 +14,11 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 610164899
+              "duration": 582113600
             },
             "embeddings": [
               {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMsIDE2LzA0LzIwMjQsIDIzOjQ3OjE3",
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMsIDE3LzA0LzIwMjQsIDAwOjA5OjQw",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
@@ -41,7 +41,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2998632000
+              "duration": 2464144098
             },
             "embeddings": [
               {
@@ -60,7 +60,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133726399
+              "duration": 151727699
             },
             "embeddings": [
               {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4028424999
+              "duration": 3857146498
             },
             "embeddings": [
               {
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63883500
+              "duration": 95147500
             },
             "embeddings": [
               {
@@ -105,7 +105,7 @@
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRkIENvdXJzZXMgZm9yIHN0dWRlbnRzLCAxNi8wNC8yMDI0LCAyMzo0NzoyNA==",
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRkIENvdXJzZXMgZm9yIHN0dWRlbnRzLCAxNy8wNC8yMDI0LCAwMDowOTo0Nw==",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -150,11 +150,11 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 443319300
+              "duration": 535406700
             },
             "embeddings": [
               {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZG1pbiBhZGRzIG5ldyB1c2VyLCAxNi8wNC8yMDI0LCAyMzo0NzoyNQ==",
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZG1pbiBhZGRzIG5ldyB1c2VyLCAxNy8wNC8yMDI0LCAwMDowOTo0Nw==",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2812465198
+              "duration": 2338403597
             },
             "embeddings": [
               {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 827630400
+              "duration": 644178299
             },
             "embeddings": [
               {
@@ -215,7 +215,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2385639497
+              "duration": 2265397199
             },
             "embeddings": [
               {
@@ -229,7 +229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123112599
+              "duration": 132267700
             },
             "embeddings": [
               {
@@ -241,7 +241,7 @@
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRtaW4gYWRkcyBuZXcgdXNlciwgMTYvMDQvMjAyNCwgMjM6NDc6MzE=",
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRtaW4gYWRkcyBuZXcgdXNlciwgMTcvMDQvMjAyNCwgMDA6MDk6NTM=",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -270,5 +270,173 @@
     "name": "User management",
     "tags": [],
     "uri": "src\\tests\\features\\addUser.feature"
+  },
+  {
+    "description": "    Edit grades feature",
+    "elements": [
+      {
+        "description": "",
+        "id": "grades-setting;edit-grades-and-save-changes",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Edit grades and save changes",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 459623600
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpFZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzLCAxNy8wNC8yMDI0LCAwMDowOTo1Mw==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcY2hlY2tHcmFkZXMuZmVhdHVyZS4uLi4u",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the grades tab",
+            "match": {
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2134295900
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIGFtIG9uIHRoZSBncmFkZXMgdGFiIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2luZyBHcmFkZXMgTGluayBQYWdlPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBMaW5rIFBhZ2UgYW5kIG5hdmlnYXRlZCB0byBHcmFkZXM+Pj4+Pj4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I go to grades setting",
+            "match": {
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1104465498
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIGdvIHRvIGdyYWRlcyBzZXR0aW5nIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2luZyBvbiBHcmFkZXMgVGFiPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+IElhbSBvbiBHcmFkZXMgVGFi",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBUYWIgYW5kIG5hdmlnYXRpbmcgbGV0dGVycyBsaW5rPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIGxldGVyIGxpbms+Pj4+Pj4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2luZyAgb24gRWRpdCBidXR0b24+Pj4+Pj4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEVkaXQgYnV0dG9uIGFuZCBuYXZpZ2F0aW5nIHRvIHNhdmUgY2hhbmdlcz4+Pj4+Pg==",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should edit grades,save the changes",
+            "match": {
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869622698
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIHNob3VsZCBlZGl0IGdyYWRlcyxzYXZlIHRoZSBjaGFuZ2VzIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIHNhdmUgYnV0dG9uPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80419399
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIGhhcyBFbmRlZC4uLi4h",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5QQVNTRUQgaGFzIEVuZGVkLi4uLiE=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6RWRpdCBncmFkZXMgYW5kIHNhdmUgY2hhbmdlcywgMTcvMDQvMjAyNCwgMDA6MDk6NTc=",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckGrades",
+            "line": 6
+          },
+          {
+            "name": "@Regression",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "grades-setting",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Grades setting",
+    "tags": [],
+    "uri": "src\\tests\\features\\checkGrades.feature"
   }
 ]
