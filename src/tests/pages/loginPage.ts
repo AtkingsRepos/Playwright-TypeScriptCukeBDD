@@ -16,7 +16,7 @@ export default class LoginPage extends BasePage {
   protected readonly passwordInput: Locator;
   protected readonly loginButton: Locator;
   protected readonly homePageLogOutDropDownElementSelector: Locator;
-  protected readonly logoutButton: Locator;
+  readonly logoutButton: Locator;
   protected readonly getLoggedInUserInfo: Locator;
 
   constructor(page: Page, log: ICreateLog) {
@@ -42,10 +42,10 @@ export default class LoginPage extends BasePage {
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
-  async adminLogin() {
+  async adminLogin(user:any, pwd:any) {
     await this.page.waitForTimeout(1000);
-    await this.usernameInput.fill(Env.ADMIN_USER1);
-    await this.passwordInput.fill(Env.ADMIN_USER1_PASSWORD);
+    await this.usernameInput.fill(user);
+    await this.passwordInput.fill(pwd);
     await this.loginButton.click();
   }
   async usersLogin(username: any, password: any) {
