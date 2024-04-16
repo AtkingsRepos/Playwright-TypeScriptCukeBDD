@@ -14,7 +14,7 @@ environment {
         ADMIN_USER1 = credentials('ADMIN_USER1') 
         ADMIN_USER1_PASSWORD = credentials('ADMIN_USER1_PASSWORD') // Retrieve credentials using Jenkins Credentials Plugin
         APP_URL = credentials('APP_URL')
-        let browserType = credentials('browser')
+        browserType = credentials('browser')
         // You can also set other environment variables here
 
     }
