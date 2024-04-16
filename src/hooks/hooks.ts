@@ -32,9 +32,9 @@ BeforeAll(async function () {
   // This hook will be executed before all scenarios
   dotenv.config();
 
-  let browserType = process.env["browser"];
+  let BROWSER_TYPE = process.env["browser"];
   //let browserType = "chrome";
-  switch (browserType) {
+  switch (BROWSER_TYPE) {
     case "chrome":
     case "gc":
       browser = await chromium.launch({
@@ -87,7 +87,7 @@ BeforeAll(async function () {
 
     default:
       throw new Error(
-        `invalid browser type${browserType} is passed ..! please, correct it`
+        `invalid browser type${BROWSER_TYPE} is passed ..! please, correct it`
       );
   }
 });
