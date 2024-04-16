@@ -53,7 +53,7 @@ When("I enter my credentials", async function () {
   // } else {
   //   console.log(">>>>>>>Logout button not found, proceeding with login...");
   // }
- 
+
   await loginPage.adminLogin(username, password);
   await getPage()
     .context()
@@ -62,7 +62,7 @@ When("I enter my credentials", async function () {
 
 Then("I should be logged in", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-  await loginPage.loggInUserVerification(Env.ADMIN_USER1);
+  await loginPage.loggInUserVerification(username);
   const pagetitle = await loginPage.getPageTitle();
   await expect(pagetitle).toEqual("Dashboard | Taribo-Elixir");
   this.log(`>>>>>>>>>page title is :",${pagetitle} `);
