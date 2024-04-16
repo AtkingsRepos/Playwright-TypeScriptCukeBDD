@@ -9,6 +9,13 @@ echo "building the application"
 echo "build success"
 }
 }
+stage('SetUp Test'){
+steps{
+bat ' npm run Setup'
+echo " running Setup test"
+echo "Setup Test success"
+}
+}
 stage('Smoke Test'){
 steps{
 bat ' npm run smoke'
