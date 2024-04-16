@@ -37,10 +37,11 @@ steps{
 echo "Functional Test success"
 }
 }
-stage('Generate HTML report'){
+stage('Generate Cucumber HTML report'){
         steps{
-        bat "npm run generate:report && npm run open_report"
-        
+        cucumber buildStatus:"UNSTABLE",
+        fileIncludePattern: "**/cucumber-report.json",
+        jsonReportDirectory: "test-results/"  
 }
 }
 }
