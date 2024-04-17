@@ -1,14 +1,15 @@
 pipeline
 {
 agent any
-//   environment{
-//         // Define environment variables here
-// ADMIN_USER1 = credentials("ADMIN_USER1")
-// ADMIN_USER1_PASSWORD = credentials("ADMIN_USER1_PASSWORD") // Retrieve credentials using Jenkins Credentials Plugin
-// APP_URL = credentials("APP_URL")
-// BROWSER_TYPE = credentials("browser") 
-//         // You can also set other environment variables here
-//     }
+  environment{
+        // Define environment variables here
+ADMIN_USER1 = credentials("ADMIN_USER1")
+ADMIN_USER1_PASSWORD = credentials("ADMIN_USER1_PASSWORD") // Retrieve credentials using Jenkins Credentials Plugin
+APP_URL = credentials("APP_URL")
+BROWSER_TYPE = credentials("browser") 
+        // You can also set other environment variables here
+    }
+    
 stages{
 stage('Build'){
 steps{
@@ -17,7 +18,13 @@ echo "building the application"
 echo "build success"
 }
 }
-
+stage('Login Test'){
+steps{
+bat ' npm run Setup'
+echo " running Login test"
+echo "Login Test success"
+}
+}
 stage('Smoke Test'){
 steps{
 bat ' npm run smoke'
