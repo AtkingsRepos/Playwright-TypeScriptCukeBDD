@@ -97,7 +97,7 @@ Before(async function (scenario) {
     storageState: "src/helper/auth/admin_auth.json",
     viewport: null,
     javaScriptEnabled: true,
-    recordVideo: { dir: "test-results/videos" },
+    //recordVideo: { dir: "test-results/videos" },
   });
   page = await context.newPage();
 
