@@ -55,9 +55,9 @@ When("I enter my credentials", async function () {
   // }
 console.log(">>>>>>USERNAME is  :",  username," >>>>PASSWORD is  :  ", password)
   await loginPage.adminLogin(username, password);
-  await getPage()
-    .context()
-    .storageState({ path: "src/helper/auth/admin_auth.json" });
+  // await getPage()
+  //   .context()
+  //   .storageState({ path: "src/helper/auth/admin_auth.json" });
 });
 
 Then("I should be logged in", async function () {
