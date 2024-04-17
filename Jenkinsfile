@@ -17,7 +17,6 @@ echo "building the application"
 echo ">>>>>Admin user name is:$ADMIN_USER1"
 echo ">>>>>>URL  is :$PP_URL "
 echo ">>>>>browser type is:$BROWSER_TYPE "
-v
 echo "build success"
 }
 }
