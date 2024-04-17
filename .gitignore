@@ -18,7 +18,8 @@
 # # *.playwright/.cache
 *.bat
 *.env
-
+**/test-results/
+test-results/
 # Logs
 *.logs
 *.log

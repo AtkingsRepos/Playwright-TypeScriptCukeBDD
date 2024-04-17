@@ -94,7 +94,7 @@ BeforeAll(async function () {
 Before(async function (scenario) {
   // This hook will be executed before all scenarios
   context = await browser.newContext({
-   // storageState: "src/helper/auth/admin_auth.json",
+    storageState: "src/helper/auth/admin_auth.json",
     viewport: null,
     javaScriptEnabled: true,
     recordVideo: { dir: "test-results/videos" },
