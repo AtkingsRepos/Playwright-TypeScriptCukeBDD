@@ -46,13 +46,13 @@ When("I enter my credentials", async function () {
   const username = process.env["ADMIN_USER1"];
   const password = process.env["ADMIN_USER1_PASSWORD"];
   const loginPage = new LoginPage(getPage(), this.log);
-  // const logoutButton = await getPage().getByRole("button", { name: "Log out" });
-  // if (logoutButton) {
-  //   console.log(">>>>>>Logout button found, clicking to log out...");
-  //   await logoutButton.click();
-  // } else {
-  //   console.log(">>>>>>>Logout button not found, proceeding with login...");
-  // }
+  const logoutButton = await getPage().getByRole("button", { name: "Log out" });
+  if (logoutButton) {
+    console.log(">>>>>>Logout button found, clicking to log out...");
+    await logoutButton.click();
+  } else {
+    console.log(">>>>>>>Logout button not found, proceeding with login...");
+  }
 console.log(">>>>>>USERNAME is  :",  username," >>>>PASSWORD is  :  ", password)
   await loginPage.adminLogin(username, password);
   await getPage()
