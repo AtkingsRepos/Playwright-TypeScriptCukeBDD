@@ -3,10 +3,10 @@ pipeline
 agent any
   environment{
         // Define environment variables here
-ADMIN_USER1 = credentials("ADMIN_USER1")
-ADMIN_USER1_PASSWORD = credentials("ADMIN_USER1_PASSWORD") // Retrieve credentials using Jenkins Credentials Plugin
-APP_URL = credentials("APP_URL")
-BROWSER_TYPE = credentials("browser") 
+ADMIN_USER1 = "ADMIN_USER1"
+ADMIN_USER1_PASSWORD = "ADMIN_USER1_PASSWORD" // Retrieve credentials using Jenkins Credentials Plugin
+APP_URL = credentials"APP_URL"
+BROWSER_TYPE = "browser" 
         // You can also set other environment variables here
     }
 stages{
