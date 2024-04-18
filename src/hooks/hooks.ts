@@ -100,6 +100,7 @@ Before(async function (scenario) {
     //recordVideo: { dir: "test-results/videos" },
   });
   page = await context.newPage();
+  page.goBack();
 
   this.log(
     `Scenario started at:${
