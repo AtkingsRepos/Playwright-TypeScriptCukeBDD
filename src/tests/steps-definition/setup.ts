@@ -27,45 +27,27 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
   this.log(`>>>>Test Execution Started at:  ${new Date().toLocaleString()}`);
 });
+
 When("I enter my credentials", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-  // const logoutButton = await getPage().getByRole("button", { name: "Log out" });
-  // if (loginPage.logoutPromptButton) {
-  //   console.log(">>>>>>Logout button found, clicking to log out...");
-  //   await loginPage.logoutPromptButton.click();
-  // } else {
-  //   console.log(">>>>>>>Logout button not found, proceeding with login...");
-  // }
-  await loginPage.adminLogin(username, password);
+  try {
+    // Click on the logout button if it's present
+    const logoutButton = await getPage().getByRole("button", {
+      name: "Log out",
+    });
+    console.log(">>>>>> Logout button found, clicking to log out...");
+    await logoutButton.click();
+  } catch (error) {
+    // If the logout button is not found, log the message and proceed with login
+    console.log(">>>>>>> Logout button not found, proceeding with login...");
+  }
 
+  await loginPage.adminLogin(username,password);
   await getPage()
     .context()
     .storageState({ path: "src/helper/auth/admin_auth.json" });
 });
 
-// When("I enter my credentials", async function () {
-//   const username = process.env["ADMIN_USER1"];
-//   const password = process.env["ADMIN_USER1_PASSWORD"];
-//   const loginPage = new LoginPage(getPage(), this.log);
-//   // const logoutButton = await getPage().getByRole("button", { name: "Log out" });
-//   // if (logoutButton) {
-//   //   console.log(">>>>>>Logout button found, clicking to log out...");
-
-//   //   await logoutButton.click();
-//   // } else {
-//   //   console.log(">>>>>>>Logout button not found, proceeding with login...");
-//   // }
-//   // console.log(
-//   //   ">>>>>>USERNAME is  :",
-//   //   username,
-//   //   " >>>>PASSWORD is  :  ",
-//   //   password
-//   // );
-//   await loginPage.adminLogin(username, password);
-//   await getPage()
-//     .context()
-//     .storageState({ path: "src/helper/auth/admin_auth.json" });
-// });
 
 Then("I should be logged in", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
