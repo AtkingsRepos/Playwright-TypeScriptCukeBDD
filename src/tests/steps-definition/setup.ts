@@ -27,20 +27,20 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
   this.log(`>>>>Test Execution Started at:  ${new Date().toLocaleString()}`);
 });
-// When("I enter my credentials", async function () {
-//   const loginPage = new LoginPage(getPage(), this.log);
-//   // if (loginPage.logoutPromptButton) {
-//   //   console.log(">>>>>>Logout button found, clicking to log out...");
-//   //   await loginPage.logoutPromptButton.click();
-//   // } else {
-//   //   console.log(">>>>>>>Logout button not found, proceeding with login...");
-//   // }
-//   await loginPage.adminLogin(username,password);
+When("I enter my credentials", async function () {
+  const loginPage = new LoginPage(getPage(), this.log);
+  if (loginPage.logoutPromptButton) {
+    console.log(">>>>>>Logout button found, clicking to log out...");
+    await loginPage.logoutPromptButton.click();
+  } else {
+    console.log(">>>>>>>Logout button not found, proceeding with login...");
+  }
+  await loginPage.adminLogin(username,password);
 
-//   await getPage()
-//     .context()
-//     .storageState({ path: "src/helper/auth/admin_auth.json" });
-// });
+  await getPage()
+    .context()
+    .storageState({ path: "src/helper/auth/admin_auth.json" });
+});
 
 When("I enter my credentials", async function () {
   const username = process.env["ADMIN_USER1"];
