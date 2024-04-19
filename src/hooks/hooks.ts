@@ -1,15 +1,13 @@
 import {
   Browser,
   chromium,
+  webkit,
   firefox,
   Page,
   BrowserContext,
 } from "@playwright/test";
 import edge from "@playwright/test";
 import {
-  Given,
-  When,
-  Then,
   Before,
   After,
   AfterStep,
@@ -20,7 +18,7 @@ import {
   setDefaultTimeout,
 } from "@cucumber/cucumber";
 import dotenv from "dotenv";
-//import { Env } from "../config/env";
+import { Env } from "../config/env";
 import LoginPage from "../tests/pages/loginPage";
 setDefaultTimeout(1000 * 10 * 2);
 
@@ -32,9 +30,9 @@ BeforeAll(async function () {
   // This hook will be executed before all scenarios
   dotenv.config();
 
-  let BROWSER_TYPE = process.env["browser"];
+  let browserType = process.env["browser"];
   //let browserType = "chrome";
-  switch (BROWSER_TYPE) {
+  switch (browserType) {
     case "chrome":
     case "gc":
       browser = await chromium.launch({
@@ -66,7 +64,7 @@ BeforeAll(async function () {
       break;
 
     case "webkit":
-    case "wk":
+    case "webkit":
       browser = await chromium.launch({
         headless: false,
         channel: "webkit",
@@ -87,7 +85,7 @@ BeforeAll(async function () {
 
     default:
       throw new Error(
-        `invalid browser type${BROWSER_TYPE} is passed ..! please, correct it`
+        `invalid browser type${browserType} is passed ..! please, correct it`
       );
   }
 });
@@ -97,10 +95,9 @@ Before(async function (scenario) {
     storageState: "src/helper/auth/admin_auth.json",
     viewport: null,
     javaScriptEnabled: true,
-    //recordVideo: { dir: "test-results/videos" },
+    recordVideo: { dir: "test-results/videos" },
   });
   page = await context.newPage();
-  page.goBack();
 
   this.log(
     `Scenario started at:${
