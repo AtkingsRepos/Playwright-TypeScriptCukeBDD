@@ -10,12 +10,14 @@
 
 **/config/env.ts
 ###test-results/
-**/helper/auth/admin_auth.json
+**/helper/
+**/admin_auth.json
 *.txt
 # .runTest.bat
 # # *.playwright-report
 # # .blob-report
 # # *.playwright/.cache
+
 *.bat
 *.env
 **/test-results/
