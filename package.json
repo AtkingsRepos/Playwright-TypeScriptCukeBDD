@@ -12,7 +12,7 @@
     "execute:script": "cucumber-js test",
     "test": "npm run execute:script || npm run posttest",
     "smoke": "cucumber-js test  --tags @Smoke",
-    "checkGrades": "cucumber-js test --tags @CheckGrades",
+    "checkGrades": "cucumber-js test --tags @CheckGrades && npm run posttest",
     "addcourses": "cucumber-js test  --tags @AddCourses",
     "Setup": "cucumber-js test --tags @Setup",
     "regression": "cucumber-js test --tags @Regression "
@@ -29,12 +29,26 @@
     "@types/node": "^20.12.2",
     "allure-playwright": "^2.14.1",
     "chance": "^1.1.11",
-    "cucumber-html-reporter": "^7.1.1",
     "mkdirp": "^3.0.1",
     "multiple-cucumber-html-reporter": "^3.6.2",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "@cucumber/html-formatter": "21.3.0",
+    "@cucumber/messages": "^24.0.0",
+    "@cucumber/pretty-formatter": "1.0.0",
+    "cucumber-console-formatter": "1.0.0",
+    "cucumber-html-reporter": "7.1.1",
+    "pixelmatch": "5.3.0",
+    "pngjs": "7.0.0",
+    "@types/fs-extra": "11.0.4",
+    "@types/expect": "24.3.0",
+    "@types/lodash": "4.17.0",
+    "@types/pixelmatch": "5.2.6",
+    "@types/pngjs": "6.0.4",
+    "fs-extra": "11.2.0",
+    "open": "10.1.0",
+    "prettier": "3.2.5"
   },
   "dependencies": {
     "dotenv": "^16.4.5"
