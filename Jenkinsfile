@@ -42,7 +42,8 @@ stage('Generate Cucumber HTML report'){
         steps{
         cucumber buildStatus:"UNSTABLE",
         fileIncludePattern: "**/cucumber-report.json",
-        jsonReportDirectory: "test-results/"  
+        jsonReportDirectory: "test-results/",
+        CUCUMBER_PUBLISH_ENABLED=true 
 }
 }
 }
