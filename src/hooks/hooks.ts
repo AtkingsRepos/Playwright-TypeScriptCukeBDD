@@ -128,7 +128,7 @@ After(async function (scenario) {
   await page.close();
   await context.close();
   this.attach(`>>>>>${scenario.pickle.name} has Ended....!`);
-  this.attach(`>>>>>${scenario.result?.status} has Ended....!`);
+  this.attach(`>>>>> Scenario has..${scenario.result?.status}....!`);
   this.attach(
     `Scenario ended at:${scenario.pickle.name}, ${new Date().toLocaleString()}`
   );
