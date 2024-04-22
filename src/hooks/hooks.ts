@@ -98,27 +98,26 @@ Before(async function (scenario) {
     recordVideo: { dir: "test-results/videos" },
   });
   page = await context.newPage();
-
-  this.log(
+  this.attach(
     `Scenario started at:${
       scenario.pickle.name
     }, ${new Date().toLocaleString()}`
   );
 
-  this.log(`>>>>>${scenario.pickle.name} Test has started....!`);
+  this.attach(`>>>>>${scenario.pickle.name} Test has started....!`);
 
   //console.log(`>>>>>Launching APP url,${process.env["APP_URL"]!}`);
-  this.log(`>>>>>Launching APP url,${scenario.pickle.uri}.....`);
+  this.attach(`>>>>>Launching APP url,${scenario.pickle.uri}.....`);
 });
 BeforeStep(async function (scenario) {
-  this.log(`>>>>>${scenario.pickleStep.text} Step has Started....!`);
+  this.attach(`>>>>>${scenario.pickleStep.text} Step has Started....!`);
 });
 AfterStep(async function ({ result }: { result: any }) {
   // This hook will be executed after all steps, and take a screenshot on step failure
   if (result.status === Status.FAILED) {
     const buffer = await page.screenshot();
     await page.screenshot({
-      path: "test-results\reportscreenshotsscreenshot1.png",
+      path: `test-results/report/screenshots/screenshot1.png`,
     });
     this.attach(buffer.toString("base64"), "base64:image/png");
     console.log("Screenshot logged");
@@ -128,9 +127,9 @@ AfterStep(async function ({ result }: { result: any }) {
 After(async function (scenario) {
   await page.close();
   await context.close();
-  this.log(`>>>>>${scenario.pickle.name} has Ended....!`);
-  this.log(`>>>>>${scenario.result?.status} has Ended....!`);
-  this.log(
+  this.attach(`>>>>>${scenario.pickle.name} has Ended....!`);
+  this.attach(`>>>>>${scenario.result?.status} has Ended....!`);
+  this.attach(
     `Scenario ended at:${scenario.pickle.name}, ${new Date().toLocaleString()}`
   );
 });

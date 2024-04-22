@@ -12,7 +12,7 @@
     "execute:script": "cucumber-js test",
     "test": "npm run execute:script || npm run posttest",
     "smoke": "cucumber-js test  --tags @Smoke",
-    "checkGrades": "cucumber-js test --tags @CheckGrades && npm run posttest",
+    "checkGrades": "cucumber-js test --tags @CheckGrades",
     "addcourses": "cucumber-js test  --tags @AddCourses",
     "Setup": "cucumber-js test --tags @Setup",
     "regression": "cucumber-js test --tags @Regression "
