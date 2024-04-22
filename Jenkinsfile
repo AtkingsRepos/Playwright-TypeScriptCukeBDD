@@ -40,7 +40,7 @@ echo "Functional Test success"
 }
 stage('Generate Cucumber HTML report'){
         steps{
-        CUCUMBER_PUBLISH_ENABLED=true,
+        {CUCUMBER_PUBLISH_ENABLED=true},
         cucumber buildStatus:"UNSTABLE",
         fileIncludePattern: "**/cucumber-report.json",
         jsonReportDirectory: "test-results/"
