@@ -117,8 +117,11 @@ AfterStep(async function ({ result }: { result: any }) {
   // This hook will be executed after all steps, and take a screenshot on step failure
   if (result.status === Status.FAILED) {
     const buffer = await page.screenshot();
-    await page.screenshot({ path: "screenshot1.png" });
-    this.attach(buffer.toString("base64"), "base64:image/png");
+    // await page.screenshot({ path: "screenshot1.png" });
+    // this.attach(buffer.toString("base64"), "base64:image/png");
+    await page.screenshot({ path: "screenshot1.jpg" });
+    this.attach(buffer.toString("base64"), "base64:image/jpg");
+
     console.log("Screenshot logged");
   }
 });

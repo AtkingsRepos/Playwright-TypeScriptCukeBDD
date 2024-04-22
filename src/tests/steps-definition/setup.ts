@@ -27,17 +27,25 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
   this.log(`>>>>Test Execution Started at:  ${new Date().toLocaleString()}`);
 });
+
 When("I enter my credentials", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-  await loginPage.adminLogin(username,password);
-  //     EnterAdminLoginCredentials(
-  //     Env.ADMIN_USER1,
-  //     Env.ADMIN_USER1_PASSWORD
-  //   );
+   await getPage().getByRole("button", { name: "Log out" }).click();
+  await loginPage.adminLogin(username, password);
   await getPage()
     .context()
     .storageState({ path: "src/helper/auth/admin_auth.json" });
-});
+ }
+ );
+// When("I enter my credentials", async function () {
+
+//   const loginPage = new LoginPage(getPage(), this.log);
+//   await loginPage.adminLogin(username, password);
+//   await getPage()
+//     .context()
+//     .storageState({ path: "src/helper/auth/admin_auth.json" });
+//  }
+// );
 
 Then("I should be logged in", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
