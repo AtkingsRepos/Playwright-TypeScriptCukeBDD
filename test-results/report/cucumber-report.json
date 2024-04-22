@@ -14,11 +14,11 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 753688199
+              "duration": 585316299
             },
             "embeddings": [
               {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMsIDIyLzA0LzIwMjQsIDEzOjEyOjEx",
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMsIDIyLzA0LzIwMjQsIDE0OjM0OjA1",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
@@ -41,7 +41,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2646147398
+              "duration": 2701664400
             },
             "embeddings": [
               {
@@ -60,7 +60,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 120687300
+              "duration": 136403097
             },
             "embeddings": [
               {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13559748798
+              "duration": 3782988399
             },
             "embeddings": [
               {
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60126999
+              "duration": 67856000
             },
             "embeddings": [
               {
@@ -105,7 +105,7 @@
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRkIENvdXJzZXMgZm9yIHN0dWRlbnRzLCAyMi8wNC8yMDI0LCAxMzoxMjoyNw==",
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRkIENvdXJzZXMgZm9yIHN0dWRlbnRzLCAyMi8wNC8yMDI0LCAxNDozNDoxMg==",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -134,5 +134,141 @@
     "name": "Add Course",
     "tags": [],
     "uri": "src\\tests\\features\\addCourse.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-management;admin-adds-new-user",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Admin adds new user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 540659500
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZG1pbiBhZGRzIG5ldyB1c2VyLCAyMi8wNC8yMDI0LCAxNDozNDoxMg==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5BZG1pbiBhZGRzIG5ldyB1c2VyIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcYWRkVXNlci5mZWF0dXJlLi4uLi4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to site administration page link",
+            "match": {
+              "location": "src\\tests\\steps-definition\\addUserSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2704318797
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIG5hdmlnYXRlIHRvIHNpdGUgYWRtaW5pc3RyYXRpb24gcGFnZSBsaW5rIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Add New User link",
+            "match": {
+              "location": "src\\tests\\steps-definition\\addUserSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3476813899
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIGNsaWNrIG9uIHRoZSBBZGQgTmV3IFVzZXIgbGluayBTdGVwIGhhcyBTdGFydGVkLi4uLiE=",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be able to add a new user",
+            "match": {
+              "location": "src\\tests\\steps-definition\\addUserSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3039736199
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5JIHNob3VsZCBiZSBhYmxlIHRvIGFkZCBhIG5ldyB1c2VyIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 133905599
+            },
+            "embeddings": [
+              {
+                "data": "Pj4+Pj5BZG1pbiBhZGRzIG5ldyB1c2VyIGhhcyBFbmRlZC4uLi4h",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj5QQVNTRUQgaGFzIEVuZGVkLi4uLiE=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRtaW4gYWRkcyBuZXcgdXNlciwgMjIvMDQvMjAyNCwgMTQ6MzQ6MjE=",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddUsers",
+            "line": 3
+          },
+          {
+            "name": "@Regression",
+            "line": 3
+          },
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User management",
+    "tags": [],
+    "uri": "src\\tests\\features\\addUser.feature"
   }
 ]
