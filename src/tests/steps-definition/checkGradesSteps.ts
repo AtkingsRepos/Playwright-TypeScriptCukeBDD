@@ -41,6 +41,6 @@ Then("I should edit grades,save the changes", async function () {
   console.log(">>>>>>>>>>expected Text:", expectedText);
   const Actual = await gradePage.getAlertMessageText();
   console.log(">>>>>>>>>>Actual Text  :  ", Actual);
-  //expect(expectedText).toEqual(Actual);
+  expect(expectedText).toEqual(Actual);
 });
 //"The default grade letters are currently overridden. × Dismiss this notification";

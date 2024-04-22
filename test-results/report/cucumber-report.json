@@ -1,32 +1,32 @@
 [
   {
-    "description": "    Admin user is able to create a new Course",
+    "description": "    Edit grades feature",
     "elements": [
       {
         "description": "",
-        "id": "add-course;add-courses-for-students",
+        "id": "grades-setting;edit-grades-and-save-changes",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Add Courses for students",
+        "line": 7,
+        "name": "Edit grades and save changes",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 585316299
+              "duration": 617141900
             },
             "embeddings": [
               {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMsIDIyLzA0LzIwMjQsIDE0OjM0OjA1",
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpFZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzLCAyMi8wNC8yMDI0LCAxNDo0MDoxMQ==",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "Pj4+Pj5BZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMgVGVzdCBoYXMgc3RhcnRlZC4uLi4h",
+                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcYWRkQ291cnNlLmZlYXR1cmUuLi4uLg==",
+                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcY2hlY2tHcmFkZXMuZmVhdHVyZS4uLi4u",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -34,154 +34,26 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the Site Adminstration page",
-            "match": {
-              "location": "src\\tests\\steps-definition\\addCoursesSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2701664400
-            },
-            "embeddings": [
-              {
-                "data": "Pj4+Pj5JIGFtIG9uIHRoZSBTaXRlIEFkbWluc3RyYXRpb24gcGFnZSBTdGVwIGhhcyBTdGFydGVkLi4uLiE=",
-                "mime_type": "text/x.cucumber.log+plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 8,
-            "name": "I navigate to Course link",
+            "name": "I am on the grades tab",
             "match": {
-              "location": "src\\tests\\steps-definition\\addCoursesSteps.ts:23"
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 136403097
+              "duration": 2731071498
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIG5hdmlnYXRlIHRvIENvdXJzZSBsaW5rIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
-                "mime_type": "text/x.cucumber.log+plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I should be able to add a course",
-            "match": {
-              "location": "src\\tests\\steps-definition\\addCoursesSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3782988399
-            },
-            "embeddings": [
-              {
-                "data": "Pj4+Pj5JIHNob3VsZCBiZSBhYmxlIHRvIGFkZCBhIGNvdXJzZSBTdGVwIGhhcyBTdGFydGVkLi4uLiE=",
-                "mime_type": "text/x.cucumber.log+plain"
-              }
-            ]
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67856000
-            },
-            "embeddings": [
-              {
-                "data": "Pj4+Pj5BZGQgQ291cnNlcyBmb3Igc3R1ZGVudHMgaGFzIEVuZGVkLi4uLiE=",
+                "data": "Pj4+Pj5JIGFtIG9uIHRoZSBncmFkZXMgdGFiIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "Pj4+Pj5QQVNTRUQgaGFzIEVuZGVkLi4uLiE=",
+                "data": "Pj4+Pj4+PjpDbGlja2luZyBHcmFkZXMgTGluayBQYWdlPj4+Pj4+",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRkIENvdXJzZXMgZm9yIHN0dWRlbnRzLCAyMi8wNC8yMDI0LCAxNDozNDoxMg==",
-                "mime_type": "text/x.cucumber.log+plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AddCourses",
-            "line": 5
-          },
-          {
-            "name": "@Regression",
-            "line": 5
-          },
-          {
-            "name": "@Smoke",
-            "line": 5
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "add-course",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Add Course",
-    "tags": [],
-    "uri": "src\\tests\\features\\addCourse.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "user-management;admin-adds-new-user",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Admin adds new user",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 540659500
-            },
-            "embeddings": [
-              {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpBZG1pbiBhZGRzIG5ldyB1c2VyLCAyMi8wNC8yMDI0LCAxNDozNDoxMg==",
-                "mime_type": "text/x.cucumber.log+plain"
-              },
-              {
-                "data": "Pj4+Pj5BZG1pbiBhZGRzIG5ldyB1c2VyIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
-                "mime_type": "text/x.cucumber.log+plain"
-              },
-              {
-                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcYWRkVXNlci5mZWF0dXJlLi4uLi4=",
-                "mime_type": "text/x.cucumber.log+plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I navigate to site administration page link",
-            "match": {
-              "location": "src\\tests\\steps-definition\\addUserSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2704318797
-            },
-            "embeddings": [
-              {
-                "data": "Pj4+Pj5JIG5hdmlnYXRlIHRvIHNpdGUgYWRtaW5pc3RyYXRpb24gcGFnZSBsaW5rIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBMaW5rIFBhZ2UgYW5kIG5hdmlnYXRlZCB0byBHcmFkZXM+Pj4+Pj4=",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -189,18 +61,42 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "I click on the Add New User link",
+            "line": 9,
+            "name": "I go to grades setting",
             "match": {
-              "location": "src\\tests\\steps-definition\\addUserSteps.ts:22"
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3476813899
+              "duration": 2558730799
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIGNsaWNrIG9uIHRoZSBBZGQgTmV3IFVzZXIgbGluayBTdGVwIGhhcyBTdGFydGVkLi4uLiE=",
+                "data": "Pj4+Pj5JIGdvIHRvIGdyYWRlcyBzZXR0aW5nIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2luZyBvbiBHcmFkZXMgVGFiPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+IElhbSBvbiBHcmFkZXMgVGFi",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBUYWIgYW5kIG5hdmlnYXRpbmcgbGV0dGVycyBsaW5rPj4+Pj4+",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIGxldGVyIGxpbms+Pj4+Pj4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2luZyAgb24gRWRpdCBidXR0b24+Pj4+Pj4=",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEVkaXQgYnV0dG9uIGFuZCBuYXZpZ2F0aW5nIHRvIHNhdmUgY2hhbmdlcz4+Pj4+Pg==",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -208,18 +104,22 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
-            "name": "I should be able to add a new user",
+            "line": 10,
+            "name": "I should edit grades,save the changes",
             "match": {
-              "location": "src\\tests\\steps-definition\\addUserSteps.ts:26"
+              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 3039736199
+              "duration": 1083810499
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIHNob3VsZCBiZSBhYmxlIHRvIGFkZCBhIG5ldyB1c2VyIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "data": "Pj4+Pj5JIHNob3VsZCBlZGl0IGdyYWRlcyxzYXZlIHRoZSBjaGFuZ2VzIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "mime_type": "text/x.cucumber.log+plain"
+              },
+              {
+                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIHNhdmUgYnV0dG9uPj4+Pj4+",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -229,11 +129,11 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 133905599
+              "duration": 62343999
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5BZG1pbiBhZGRzIG5ldyB1c2VyIGhhcyBFbmRlZC4uLi4h",
+                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIGhhcyBFbmRlZC4uLi4h",
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
@@ -241,7 +141,7 @@
                 "mime_type": "text/x.cucumber.log+plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6QWRtaW4gYWRkcyBuZXcgdXNlciwgMjIvMDQvMjAyNCwgMTQ6MzQ6MjE=",
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6RWRpdCBncmFkZXMgYW5kIHNhdmUgY2hhbmdlcywgMjIvMDQvMjAyNCwgMTQ6NDA6MTc=",
                 "mime_type": "text/x.cucumber.log+plain"
               }
             ]
@@ -249,26 +149,22 @@
         ],
         "tags": [
           {
-            "name": "@AddUsers",
-            "line": 3
+            "name": "@CheckGrades",
+            "line": 6
           },
           {
             "name": "@Regression",
-            "line": 3
-          },
-          {
-            "name": "@Smoke",
-            "line": 3
+            "line": 6
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "user-management",
-    "line": 1,
+    "id": "grades-setting",
+    "line": 2,
     "keyword": "Feature",
-    "name": "User management",
+    "name": "Grades setting",
     "tags": [],
-    "uri": "src\\tests\\features\\addUser.feature"
+    "uri": "src\\tests\\features\\checkGrades.feature"
   }
 ]
