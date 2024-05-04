@@ -1,32 +1,32 @@
 [
   {
-    "description": "    Edit grades feature",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "grades-setting;edit-grades-and-save-changes",
+        "id": "setup-storage-state-so-that-login-details-could-be-re-used;admin-successfully-logs-in-and-login-state-is-stored",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "Edit grades and save changes",
+        "line": 4,
+        "name": "admin successfully logs in and login state is stored",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 722936599
+              "duration": 978918099
             },
             "embeddings": [
               {
-                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDpFZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzLCAyMi8wNC8yMDI0LCAxODoyMDozNw==",
+                "data": "U2NlbmFyaW8gc3RhcnRlZCBhdDphZG1pbiBzdWNjZXNzZnVsbHkgbG9ncyBpbiBhbmQgbG9naW4gc3RhdGUgaXMgc3RvcmVkLCAwNC8wNS8yMDI0LCAxNjoxMzoxOQ==",
                 "mime_type": "text/plain"
               },
               {
-                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
+                "data": "Pj4+Pj5hZG1pbiBzdWNjZXNzZnVsbHkgbG9ncyBpbiBhbmQgbG9naW4gc3RhdGUgaXMgc3RvcmVkIFRlc3QgaGFzIHN0YXJ0ZWQuLi4uIQ==",
                 "mime_type": "text/plain"
               },
               {
-                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcY2hlY2tHcmFkZXMuZmVhdHVyZS4uLi4u",
+                "data": "Pj4+Pj5MYXVuY2hpbmcgQVBQIHVybCxzcmNcdGVzdHNcZmVhdHVyZXNcc2V0dXAuZmVhdHVyZS4uLi4u",
                 "mime_type": "text/plain"
               }
             ]
@@ -34,69 +34,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
-            "name": "I am on the grades tab",
+            "line": 5,
+            "name": "As a User, I navigate to the moodle login webpage",
             "match": {
-              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:15"
+              "location": "src\\tests\\steps-definition\\setup.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 2694216398
+              "duration": 849819599
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIGFtIG9uIHRoZSBncmFkZXMgdGFiIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "data": "Pj4+Pj5BcyBhIFVzZXIsIEkgbmF2aWdhdGUgdG8gdGhlIG1vb2RsZSBsb2dpbiB3ZWJwYWdlIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
                 "mime_type": "text/plain"
               },
               {
-                "data": "Pj4+Pj4+PjpDbGlja2luZyBHcmFkZXMgTGluayBQYWdlPj4+Pj4+",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBMaW5rIFBhZ2UgYW5kIG5hdmlnYXRlZCB0byBHcmFkZXM+Pj4+Pj4=",
-                "mime_type": "text/plain"
+                "data": "Pj4+PlRlc3QgRXhlY3V0aW9uIFN0YXJ0ZWQgYXQ6ICAwNC8wNS8yMDI0LCAxNjoxMzoyMA==",
+                "mime_type": "text/x.cucumber.log+plain"
               }
             ]
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "I go to grades setting",
+            "line": 6,
+            "name": "I enter my credentials",
             "match": {
-              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:23"
+              "location": "src\\tests\\steps-definition\\setup.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1222061198
+              "duration": 1908427397
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIGdvIHRvIGdyYWRlcyBzZXR0aW5nIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2luZyBvbiBHcmFkZXMgVGFiPj4+Pj4+",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+IElhbSBvbiBHcmFkZXMgVGFi",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEdyYWRlcyBUYWIgYW5kIG5hdmlnYXRpbmcgbGV0dGVycyBsaW5rPj4+Pj4+",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIGxldGVyIGxpbms+Pj4+Pj4=",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2luZyAgb24gRWRpdCBidXR0b24+Pj4+Pj4=",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIEVkaXQgYnV0dG9uIGFuZCBuYXZpZ2F0aW5nIHRvIHNhdmUgY2hhbmdlcz4+Pj4+Pg==",
+                "data": "Pj4+Pj5JIGVudGVyIG15IGNyZWRlbnRpYWxzIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
                 "mime_type": "text/plain"
               }
             ]
@@ -104,23 +76,23 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I should edit grades,save the changes",
+            "line": 7,
+            "name": "I should be logged in",
             "match": {
-              "location": "src\\tests\\steps-definition\\checkGradesSteps.ts:38"
+              "location": "src\\tests\\steps-definition\\setup.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 1000538598
+              "duration": 126799598
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5JIHNob3VsZCBlZGl0IGdyYWRlcyxzYXZlIHRoZSBjaGFuZ2VzIFN0ZXAgaGFzIFN0YXJ0ZWQuLi4uIQ==",
+                "data": "Pj4+Pj5JIHNob3VsZCBiZSBsb2dnZWQgaW4gU3RlcCBoYXMgU3RhcnRlZC4uLi4h",
                 "mime_type": "text/plain"
               },
               {
-                "data": "Pj4+Pj4+PjpDbGlja2VkIG9uIHNhdmUgYnV0dG9uPj4+Pj4+",
-                "mime_type": "text/plain"
+                "data": "Pj4+Pj4+Pj4+cGFnZSB0aXRsZSBpcyA6IixEYXNoYm9hcmQgfCBUYXJpYm8tRWxpeGlyIA==",
+                "mime_type": "text/x.cucumber.log+plain"
               }
             ]
           },
@@ -129,11 +101,11 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78107800
+              "duration": 119207799
             },
             "embeddings": [
               {
-                "data": "Pj4+Pj5FZGl0IGdyYWRlcyBhbmQgc2F2ZSBjaGFuZ2VzIGhhcyBFbmRlZC4uLi4h",
+                "data": "Pj4+Pj5hZG1pbiBzdWNjZXNzZnVsbHkgbG9ncyBpbiBhbmQgbG9naW4gc3RhdGUgaXMgc3RvcmVkIGhhcyBFbmRlZC4uLi4h",
                 "mime_type": "text/plain"
               },
               {
@@ -141,7 +113,7 @@
                 "mime_type": "text/plain"
               },
               {
-                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6RWRpdCBncmFkZXMgYW5kIHNhdmUgY2hhbmdlcywgMjIvMDQvMjAyNCwgMTg6MjA6NDI=",
+                "data": "U2NlbmFyaW8gZW5kZWQgYXQ6YWRtaW4gc3VjY2Vzc2Z1bGx5IGxvZ3MgaW4gYW5kIGxvZ2luIHN0YXRlIGlzIHN0b3JlZCwgMDQvMDUvMjAyNCwgMTY6MTM6MjI=",
                 "mime_type": "text/plain"
               }
             ]
@@ -149,22 +121,18 @@
         ],
         "tags": [
           {
-            "name": "@CheckGrades",
-            "line": 6
-          },
-          {
-            "name": "@Regression",
-            "line": 6
+            "name": "@Setup",
+            "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "grades-setting",
-    "line": 2,
+    "id": "setup-storage-state-so-that-login-details-could-be-re-used",
+    "line": 1,
     "keyword": "Feature",
-    "name": "Grades setting",
+    "name": "Setup storage state so that login details could be re-used",
     "tags": [],
-    "uri": "src\\tests\\features\\checkGrades.feature"
+    "uri": "src\\tests\\features\\setup.feature"
   }
 ]

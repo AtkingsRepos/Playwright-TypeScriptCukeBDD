@@ -30,7 +30,7 @@ Given("As a User, I navigate to the moodle login webpage", async function () {
 
 When("I enter my credentials", async function () {
   const loginPage = new LoginPage(getPage(), this.log);
-   await getPage().getByRole("button", { name: "Log out" }).click();
+   //await getPage().getByRole("button", { name: "Log out" }).click();
   await loginPage.adminLogin(username, password);
   await getPage()
     .context()

@@ -48,7 +48,11 @@
     "@types/pngjs": "6.0.4",
     "fs-extra": "11.2.0",
     "open": "10.1.0",
-    "prettier": "3.2.5"
+    "prettier": "3.2.5",
+    "winston": "3.8.2",
+    "@types/cucumber-html-reporter": "5.0.1",
+    "@types/randomstring": "^1.1.8",
+    "randomstring": "1.2.2"
   },
   "dependencies": {
     "dotenv": "^16.4.5"

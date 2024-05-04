@@ -17,6 +17,7 @@ import {
   BeforeAll,
   setDefaultTimeout,
 } from "@cucumber/cucumber";
+import Log from "../support/logger/Log";
 import dotenv from "dotenv";
 //import { Env } from "../config/env";
 //import LoginPage from "../tests/pages/loginPage";
@@ -95,7 +96,7 @@ Before(async function (scenario) {
     storageState: "src/helper/auth/admin_auth.json",
     viewport: null,
     javaScriptEnabled: true,
-    recordVideo: { dir: "test-results/videos" },
+    //recordVideo: { dir: "test-results/videos" },
   });
   page = await context.newPage();
   this.attach(

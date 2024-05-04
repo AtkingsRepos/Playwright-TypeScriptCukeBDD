@@ -1,0 +1,8 @@
+require('dotenv').config();
+
+browser=msedge
+APP_URL=http://localhost/login/index.php/
+COURSES_URL=http://localhost/admin/search.php#linkcourses
+ADMIN_USER1=admin
+ADMIN_USER1_PASSWORD=Admin-123
+COURSES_URL =http://localhost/admin/search.php#linkcourses
