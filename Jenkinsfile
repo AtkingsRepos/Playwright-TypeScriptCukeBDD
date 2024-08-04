@@ -24,17 +24,17 @@ echo " running Smoke test"
 echo "Smoke Test success"
 }
 }
-stage('Sanity Test'){
+stage('Regression Test'){
 steps{
-bat ' npm run addcourses'
+bat ' npm run regression'
 bat 'npm run checkGrades'
 echo " running Smoke test"
 echo "Smoke Test success"
 }
 }
-stage('Functional Test'){
+stage('Functional: End2End Test'){
 steps{
- bat 'npm run regression'
+ bat 'npm run test'
 echo "Functional Test success"
 }
 }
