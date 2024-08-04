@@ -15,7 +15,8 @@
     "checkGrades": "cucumber-js test --tags @CheckGrades",
     "addcourses": "cucumber-js test  --tags @AddCourses",
     "Setup": "cucumber-js test --tags @Setup",
-    "regression": "cucumber-js test --tags @Regression "
+    "regression": "cucumber-js test --tags @Regression ",
+    "storageState": "npx playwright codegen  http://localhost/login/index.php --save-storage=src/helper/auth/admin_auth.json"
   },
   "keywords": [],
   "author": "",

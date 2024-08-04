@@ -64,7 +64,7 @@ export default defineConfig({
     },
     {
       name: "webkit",
-      use: {
+     use: {
         ...devices["Desktop Safari"],
         viewport: { width: 1280, height: 720 },
       },
@@ -75,7 +75,7 @@ export default defineConfig({
     },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    },
+       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+     },
   ],
-});
+ });
